@@ -1,4 +1,24 @@
 # 16. Check for Palindrome String
+str1=input("Enter a string :")
+p1=0
+p2=len(str1)-1
+f=0
+while p1<=p2:
+    if str1[p1]==str1[p2]:
+        p1+=1
+        p2-=1
+    else:
+        f=1
+        print("Not a Palindrome")
+        break
+if f==0:
+    print("Palidrome")
+    
+#OUTPUT:
+# Enter a string :racecar
+# Palidrome
+
+#using string slicing
 
 str1=input("Enter a string:").lower()
 
@@ -107,5 +127,6 @@ print("Reversed number:",rev_num)
 # OUTPUT:
 # Enter a number:1234
 # Reversed number: 4321
+
 
 
